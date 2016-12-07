@@ -1,0 +1,1 @@
+json.partial! "iines/iine", iine: @iine
