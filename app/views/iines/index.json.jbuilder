@@ -1,0 +1,1 @@
+json.array! @iines, partial: 'iines/iine', as: :iine
