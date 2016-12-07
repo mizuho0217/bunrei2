@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: "examples#index"
   resources :tags
   resources :iines
-  resources :examples
+  resources :examples, only: [:index, :show, :new, :create, :destroy, :edit, :update]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
