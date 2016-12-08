@@ -4,7 +4,7 @@ class ExamplesController < ApplicationController
   # GET /examples
   # GET /examples.json
   def index
-    @examples = Example.all
+    @examples = Example.order("created_at DESC")
   end
 
   # GET /examples/1
