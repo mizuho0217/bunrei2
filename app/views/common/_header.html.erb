@@ -27,7 +27,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">アカウント <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><%= link_to "マイページ", user_path(current_user) %></li>
-            <li><a href="#">プロフィール編集</a></li>
+            <li><%= link_to "プロフィール編集", edit_user_path(current_user) %></li>
             <li><a href="#">Myいいね</a></li>
             <li role="separator" class="divider"></li>
             <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
