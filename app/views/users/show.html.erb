@@ -3,6 +3,12 @@
 
 <div class="col-lg-12">
   <p><%= image_tag @user.avatar.url(:medium) %></p>
-  <h2><%= @user.name %></h2>
+  <h2><%= @user.name %></h2><br />
+    <div>
+      <h3>自己紹介</h3>
+      <table class="table">
+        <tr><th><%= @user.self_intro %></th></tr>
+      </table>
+    </div>
 </div>
 </div>
