@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161214103359) do
+ActiveRecord::Schema.define(version: 20161216144554) do
 
   create_table "examples", force: :cascade do |t|
     t.string   "title",      limit: 255
@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 20161214103359) do
     t.integer  "avatar_file_size",       limit: 4
     t.datetime "avatar_updated_at"
     t.text     "self_intro",             limit: 65535
-    t.text     "url",                    limit: 65535
+    t.text     "hp_blog",                limit: 65535
     t.text     "facebook",               limit: 65535
     t.string   "twitter",                limit: 255
     t.string   "instagram",              limit: 255
